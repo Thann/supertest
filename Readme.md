@@ -2,6 +2,10 @@
 
   HTTP assertions made easy via [superagent](http://github.com/visionmedia/superagent).
 
+## Thann's Changes
+  Body assertions use "deep-equal-with-regex" instead of deepEqual so the body:
+  `{ token: '90809823423'}` will match `expect({token: /\d+/})`
+
 ## About
 
   The motivation with this module is to provide a high-level abstraction for testing
