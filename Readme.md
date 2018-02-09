@@ -3,8 +3,9 @@
   HTTP assertions made easy via [superagent](http://github.com/visionmedia/superagent).
 
 ## Thann's Changes
-  Body assertions use "deep-equal-with-regex" instead of deepEqual so the body:
+  1. Body assertions use "deep-equal-with-regex" instead of deepEqual so the body:
   `{ token: '90809823423'}` will match `expect({token: /\d+/})`
+  2. Added "prefix" agent option: `agent(server, { prefix: '/api/v1' })`
 
 ## About
 
